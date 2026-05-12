@@ -1,204 +1,320 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.30">
-    <meta name="description" content="Política de Privacidade do aplicativo AlagaBelém.">
-    <title>Política de Privacidade - AlagaBelém</title>
-    <style>
-    /* Reset básico */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Política de Privacidade do aplicativo AlagaBelém">
+
+<title>Política de Privacidade - AlagaBelém</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#dff3ff,#f7fbff);
+    color:#333;
+    line-height:1.7;
+    padding:20px;
+}
+
+/* CONTAINER */
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.10);
+}
+
+/* TOPO */
+.top-box{
+    background:#e9f7ff;
+    text-align:center;
+    padding:20px;
+    border-bottom:1px solid #d7ebf7;
+}
+
+.top-box img{
+    width:100%;
+    max-width:280px;
+    height:auto;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#004080,#0066cc);
+    color:#fff;
+    text-align:center;
+    padding:35px 20px;
+}
+
+header h1{
+    font-size:2.2rem;
+    margin-bottom:10px;
+}
+
+/* CONTENT */
+section{
+    padding:35px;
+}
+
+section h2{
+    color:#0056b3;
+    margin-top:25px;
+    margin-bottom:12px;
+    font-size:1.35rem;
+    border-left:5px solid #0077ff;
+    padding-left:12px;
+}
+
+section p{
+    margin-bottom:18px;
+    text-align:justify;
+    color:#555;
+    font-size:1rem;
+}
+
+section ul{
+    margin-left:25px;
+    margin-bottom:20px;
+}
+
+section li{
+    margin-bottom:10px;
+    color:#555;
+}
+
+/* LINKS */
+a{
+    color:#0056b3;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* IMAGEM FINAL */
+.final-image{
+    padding:20px;
+    text-align:center;
+}
+
+.final-image img{
+    width:100%;
+    max-width:320px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.10);
+}
+
+/* FOOTER */
+footer{
+    background:#f5f8fb;
+    text-align:center;
+    padding:20px;
+    font-size:0.9rem;
+    color:#666;
+    border-top:1px solid #e3e3e3;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+    body{
+        padding:10px;
     }
 
-    /* Corpo principal */
-    body {
-        font-family: 'Arial', sans-serif;
-        line-height: 1.5;
-        background: linear-gradient(135deg, #e6f7ff, #ffffff);
-        color: #333;
-        padding: 20px;
+    .container{
+        border-radius:12px;
     }
 
-    /* Container */
-    .container {
-        max-width: 800px;
-        margin: 10px auto;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
+    header{
+        padding:28px 15px;
     }
 
-    /* Cabeçalho */
-    header {
-        background: #004080; /* Azul mais escuro */
-        color: #fff;
-        text-align: center;
-        padding: 15px 10px;
-        position: relative;
+    header h1{
+        font-size:1.7rem;
     }
 
-    /* Alinhamento do título e imagem */
-    .header-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
+    section{
+        padding:22px;
     }
 
-    .header-content img {
-        height: auto;
-        border-radius: 5px;
-        object-fit: cover;
+    section h2{
+        font-size:1.15rem;
     }
 
-    .header-content h1 {
-        font-size: 2.5em; /* Fonte aumentada */
-        font-weight: bold;
-        margin: 0;
+    section p,
+    section li{
+        font-size:0.95rem;
     }
 
-    header p {
-        font-size: 0.9em;
-        margin-top: 8px;
-        opacity: 0.9;
+    .top-box img{
+        max-width:220px;
     }
 
-    /* Novo título */
-    .top-box {
-        background: #d9edf7; /* Azul claro */
-        color: #31708f; /* Azul mais escuro */
-        text-align: center;
-        padding: 10px;
-        font-size: 1.3em;
-        font-weight: bold;
-        border-bottom: 3px solid #bce8f1;
+    .final-image img{
+        max-width:240px;
     }
 
-    /* Seções */
-    section {
-        padding: 15px 25px;
+}
+
+/* TELAS MUITO PEQUENAS */
+@media (max-width:480px){
+
+    header h1{
+        font-size:1.4rem;
     }
 
-    section h2 {
-        font-size: 1.4em;
-        color: #0056b3;
-        margin-bottom: 8px;
+    section{
+        padding:18px;
     }
 
-    section p, section ul {
-        margin-bottom: 15px;
-        font-size: 0.95em;
-        color: #555;
-        text-align: justify;
+    section p{
+        text-align:left;
     }
 
-    section ul {
-        padding-left: 20px;
-    }
+}
 
-    section ul li {
-        list-style: disc;
-    }
-
-    /* Imagem final */
-    .final-image {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .final-image img {
-        max-width: 30%;
-        height: auto;
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Rodapé */
-    footer {
-        background: #f8f9fa;
-        text-align: center;
-        padding: 8px 20px;
-        font-size: 0.8em;
-        color: #666;
-    }
-
-    footer a {
-        color: #0056b3;
-        text-decoration: none;
-    }
-
-    footer a:hover {
-        text-decoration: underline;
-    }
-    </style>
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Nova caixa com título -->
-        
-        <div class="top-box">
-            <img src="marcaalagabelem.png" alt="Logo AlagaBelém">
-        </div>
-        
-        <!-- Cabeçalho -->
-        <header>
-            <div class="header-content">
-                <h1>Política de Privacidade</h1>
-            </div>
-        </header>
 
-        <!-- Conteúdo -->
-        <section>
-            <h2>1. Coleta de Informações</h2>
-            <p>O aplicativo <strong>AlagaBelém</strong>, desenvolvido pelo Grupo de Pesquisa em Água, Energia e Sustentabilidade da Amazônia (GAES) foi projetado para garantir a máxima privacidade de seus usuários. Não realizamos a coleta de quaisquer dados pessoais, sensíveis ou identificáveis. Todas as operações do aplicativo ocorrem localmente no dispositivo do usuário, de forma isolada e segura.</p>
-       
-            <h2>2. Finalidade do Processamento de Dados</h2>
-            <p>Os dados utilizados pelo aplicativo são exclusivamente para fornecer informações sobre alagamentos em tempo real. Este processamento acontece de maneira local, sem qualquer transmissão de dados para servidores externos ou armazenamento em bancos de dados remotos.</p>
-        
-            <h2>3. Compartilhamento de Informações</h2>
-            <p>Garantimos que o <strong>AlagaBelém</strong> não compartilha informações de qualquer natureza com terceiros, sejam eles parceiros comerciais, agências de marketing ou órgãos governamentais. Nosso compromisso é proteger a privacidade dos usuários em todas as circunstâncias.</p>
-        
-            <h2>4. Medidas de Segurança</h2>
-            <p>Embora o aplicativo não armazene dados sensíveis, adotamos práticas de segurança rigorosas para proteger qualquer tipo de informação processada localmente.</p>
-        
-            <h2>5. Retenção e Exclusão de Dados</h2>
-            <p>O <strong>AlagaBelém</strong> não retém dados dos usuários. Como parte de nossa política de privacidade, toda e qualquer informação é descartada imediatamente após o uso, como data e hora, sem exceções.</p>
-        
-            <h2>6. Direitos dos Usuários</h2>
-            <p>Reconhecemos a importância dos direitos dos usuários em relação à privacidade de suas informações. Você tem o direito de obter informações claras sobre como seus dados são processados e de questionar qualquer aspecto que considere necessário.</p>
-        
-            <h2>7. Uso de Cookies e Tecnologias Similares</h2>
-            <p>O aplicativo <strong>não utiliza cookies</strong> ou qualquer tecnologia similar que colete informações do usuário.</p>
-        
-            <h2>8. Atualizações na Política de Privacidade</h2>
-            <p>Esta política poderá ser revisada e atualizada periodicamente para atender a mudanças regulatórias, técnicas ou funcionais.</p>
-        
-            <h2>9. Informações de Contato</h2>
-            <p>Se você tiver dúvidas ou preocupações, entre em contato conosco:</p>
-            <ul>
-                <li><strong>E-mail:</strong> <a href="mailto:blanco@ufpa.br">blanco@ufpa.br</a></li>
-                <li><strong>Endereço:</strong> Universidade Federal do Pará, Rua Augusto Corrêa, nº 01, Bairro Guamá, Belém, Pará, Brasil</li>
-            </ul>
-        </section>
+<div class="container">
 
-        <!-- Imagem adicional -->
-        <div class="final-image">
-            <img src="Logos.png" alt="Imagem relacionada ao AlagaBelém">
-        </div>
-
-        <!-- Rodapé -->
-        <footer>
-            <p>© 2026 AlagaBelém. Todos os direitos reservados. Última atualização: 12 de maio de 2026</p>
-        </footer>
+    <!-- TOPO -->
+    <div class="top-box">
+        <img src="marcaalagabelem.png" alt="Logo AlagaBelém">
     </div>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Política de Privacidade</h1>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <section>
+
+        <h2>1. Coleta de Informações</h2>
+
+        <p>
+            O aplicativo <strong>AlagaBelém</strong>, desenvolvido pelo
+            Laboratório de Engenharia Hídrica e Mudanças Climáticas (LEHMC),
+            foi projetado para garantir a máxima privacidade de seus usuários.
+        </p>
+
+        <p>
+            Não realizamos a coleta de dados pessoais, sensíveis ou identificáveis.
+            Todas as operações do aplicativo ocorrem localmente no dispositivo do usuário,
+            de forma segura e isolada.
+        </p>
+
+        <h2>2. Finalidade do Processamento de Dados</h2>
+
+        <p>
+            Os dados utilizados pelo aplicativo servem exclusivamente para fornecer
+            informações sobre alagamentos em tempo real.
+        </p>
+
+        <p>
+            Todo o processamento acontece localmente, sem transmissão para servidores
+            externos ou armazenamento remoto.
+        </p>
+
+        <h2>3. Compartilhamento de Informações</h2>
+
+        <p>
+            O <strong>AlagaBelém</strong> não compartilha informações com terceiros,
+            incluindo parceiros comerciais, agências de marketing ou órgãos governamentais.
+        </p>
+
+        <h2>4. Medidas de Segurança</h2>
+
+        <p>
+            Mesmo sem armazenar dados sensíveis, adotamos práticas modernas de segurança
+            para proteger qualquer informação processada localmente.
+        </p>
+
+        <h2>5. Retenção e Exclusão de Dados</h2>
+
+        <p>
+            O aplicativo não retém dados dos usuários.
+            Todas as informações utilizadas são descartadas imediatamente após o uso.
+        </p>
+
+        <h2>6. Direitos dos Usuários</h2>
+
+        <p>
+            Você possui o direito de obter informações claras sobre o funcionamento
+            e processamento dos dados utilizados pelo aplicativo.
+        </p>
+
+        <h2>7. Cookies e Tecnologias Similares</h2>
+
+        <p>
+            O aplicativo <strong>não utiliza cookies</strong> ou tecnologias similares
+            para rastreamento de usuários.
+        </p>
+
+        <h2>8. Atualizações da Política</h2>
+
+        <p>
+            Esta política poderá ser revisada periodicamente para atender mudanças
+            técnicas, regulatórias ou funcionais.
+        </p>
+
+        <h2>9. Contato</h2>
+
+        <p>
+            Em caso de dúvidas ou solicitações:
+        </p>
+
+        <ul>
+            <li>
+                <strong>E-mail:</strong>
+                <a href="mailto:blanco@ufpa.br">
+                    blanco@ufpa.br
+                </a>
+            </li>
+
+            <li>
+                <strong>Endereço:</strong>
+                Universidade Federal do Pará (UFPA) —
+                Rua Augusto Corrêa, nº 01,
+                Bairro Guamá,
+                Belém - Pará - Brasil
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- IMAGEM -->
+    <div class="final-image">
+        <img src="Logos.png" alt="Logos institucionais">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 AlagaBelém — Todos os direitos reservados
+        <br>
+        Última atualização: 12 de maio de 2026
+    </footer>
+
+</div>
+
 </body>
 </html>
-
-
-
